@@ -8,6 +8,7 @@
 
 ### Fixed
 
+- Browser: recognize Astra's version-prefixed effort controls using existing localized tier labels, including Japanese `極高`, and select the Japanese `最新` model option while preserving strict model and Pro slider verification.
 - Azure: ignore generic base URLs during model metadata resolution as well as request dispatch, preventing OpenRouter catalog lookups with Azure credentials.
 - Browser: retain per-file attachment evidence through local/remote upload and send checks, including filename-less images; activate and stabilize the send target without replaying a dispatched prompt. Fixes #418. Thanks @hubofvalley!
 - Remote: allocate unique upload basenames for primary and fallback attachments that collide after sanitization, preserving original display paths and every payload. Fixes #387. Thanks @postoso!
